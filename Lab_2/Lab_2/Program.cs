@@ -12,29 +12,28 @@ namespace Lab_2
 {
     public class Program
     {
-
-            public static void Main()
-            {
-                ESCD e = new ESCD();
-            Console.Write("Задайте диаметр отверстия: ");
-            e.Diam = float.Parse(Console.ReadLine());
-            Console.Write("Задайте диаметр вала: ");
-            e.diam = float.Parse(Console.ReadLine());
-            Console.Write("Задайте максимальное отклонение D: ");
-            e.ES = float.Parse(Console.ReadLine());
-            Console.Write("Задайте минимальное отклонение D: ");
-            e.EI = float.Parse(Console.ReadLine());
-            Console.Write("Задайте максимальное отклонение d: ");
-            e.es = float.Parse(Console.ReadLine());
-            Console.Write("Задайте минимальное отклонение d: ");
-            e.ei = float.Parse(Console.ReadLine());
-                e.PrintDmax();
-                e.PrintDmin();
-                e.Printdmax();
-                e.Printdmin(); 
-                e.PrintTD();
-                e.Printtd();
-                e.PrintPosad();
-            }
+        public static void Main()
+        {
+            Size otv = new Size("отверстие", 12, 0.04, 0.02);
+            Size val = new Size("вал", 12, 0.01, 0.00);
+            Connection con = new Connection(otv, val);
+            //Console.Write("Задайте диаметр отверстия: ");
+            //s.Nominal = float.Parse(Console.ReadLine());
+            //Console.Write("Задайте максимальное отклонение d: ");
+            //s.ess = float.Parse(Console.ReadLine());
+            //Console.Write("Задайте минимальное отклонение d: ");
+            //s.eii = float.Parse(Console.ReadLine());
+            Console.WriteLine($"Максимальный диаметр: {otv.Dmax()}");
+            Console.WriteLine($"Максимальный диаметр: {otv.Dmax()}");
+            Console.WriteLine($"Минимальный диаметр: {otv.Dmin()}");
+            Console.WriteLine($"Допуск: {otv.TD()}");
+            Console.WriteLine($"Максимальный диаметр: {val.Dmax()}");
+            Console.WriteLine($"Максимальный диаметр: {val.Dmax()}");
+            Console.WriteLine($"Минимальный диаметр: {val.Dmin()}");
+            Console.WriteLine($"Допуск: {val.TD()}");
+            con.GetInfo();
+            Console.WriteLine($"Вероятность появления зазора: {con.ProbabilitySmax()}");
+            Console.WriteLine($"Вероятность появления натяга: {con.ProbabilityNmax()}");
         }
     }
+}
