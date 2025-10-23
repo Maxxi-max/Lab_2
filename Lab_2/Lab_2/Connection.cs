@@ -21,7 +21,7 @@ namespace Lab_2
         private double? smin = null;
         private double? nmax = null;
         private double? nmin = null;
-        public string GetInfo() // Функция для вывода информации о виде посадки 
+        public string GetInfo() // Метод для вывода информации о виде посадки 
         {
             switch (type)
             {
@@ -40,7 +40,7 @@ namespace Lab_2
                 default: { return "0"; }
             }
         }
-        private void SetType() // Функция для определения вида посадки и расчета зазора-натяга
+        private void SetType() // Метод для определения вида посадки и расчета зазора-натяга
         {
             if (_hole.Es - _shaft.Ei > 0 && _hole.Ei - _shaft.Ei > 0)
             {
@@ -77,7 +77,7 @@ namespace Lab_2
         {
             get { return nmin; }
         }
-        private double? Probability() // Функция для расчета значения интеграла Ф(z)
+        private double? Probability() // Метод для расчета значения интеграла Ф(z)
         {
             double? Mx = (_shaft.Es + _shaft.Ei) / 2 - (_hole.Es + _hole.Ei) / 2;
             double? Sigma = 1.0 / 6 * Math.Sqrt(Math.Pow(((double)_shaft.Es + (double)_shaft.Ei), 2) + Math.Pow(((double)_hole.Es + (double)_hole.Ei), 2));
@@ -95,11 +95,11 @@ namespace Lab_2
             double? Fz = 1.0 / Math.Sqrt((2 * 3.14)) * Fx;
             return Fz;
         }
-        public double? ProbabilitySmax() // Функция для расчета вероятности зазора при переходной посадке
+        public double? ProbabilitySmax() // Метод для расчета вероятности зазора при переходной посадке
         {
             return 0.4986 + Probability();
         }
-        public double? ProbabilityNmax() // Функция для расчета вероятности натяга при переходной посадке
+        public double? ProbabilityNmax() // Метод для расчета вероятности натяга при переходной посадке
         {
             return 1 - ProbabilitySmax();
         }
