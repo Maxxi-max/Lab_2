@@ -52,17 +52,17 @@ namespace Lab_2
             private set { _ei = value; }
             get { return _ei; }
         }
-        public double? Dmax() // Расчет максимального диаметра
+        public double? Dmax() // Метод максимального диаметра
         {
             double? Dmax = _nominal + _es;
             return Dmax;
         }
-        public double? Dmin() // Расчет минимального диаметра
+        public double? Dmin() // Метод минимального диаметра
         {
             double? Dmin = _nominal + _ei;
             return Dmin;
         }
-        public double? TD() // Расчет допуска
+        public double? TD() // Метод допуска
         {
             double? TD = _es - _ei;
             return TD;
