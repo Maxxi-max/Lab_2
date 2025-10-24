@@ -14,8 +14,8 @@ namespace Lab_2
     {
         public static void Main()
         {
-            Size otv = new Size("отверстие", 12, 0.04, 0.02);
-            Size val = new Size("вал", 12, 0.01, 0.00);
+            Size otv = new Size("отверстие", 12, 0.04, 0.02); // Задача данных отверстия
+            Size val = new Size("вал", 12, 0.01, 0.00); // Заданча данных вала
             Connection con = new Connection(otv, val);
             //Console.Write("Задайте диаметр отверстия: ");
             //s.Nominal = float.Parse(Console.ReadLine());
@@ -23,7 +23,7 @@ namespace Lab_2
             //s.ess = float.Parse(Console.ReadLine());
             //Console.Write("Задайте минимальное отклонение d: ");
             //s.eii = float.Parse(Console.ReadLine());
-            Console.WriteLine($"Максимальный диаметр: {otv.Dmax()}");
+            Console.WriteLine($"Максимальный диаметр: {otv.Dmax()}"); //Вывод расчетов соответствующих методов
             Console.WriteLine($"Максимальный диаметр: {otv.Dmax()}");
             Console.WriteLine($"Минимальный диаметр: {otv.Dmin()}");
             Console.WriteLine($"Допуск: {otv.TD()}");

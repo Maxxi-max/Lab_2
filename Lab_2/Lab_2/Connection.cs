@@ -9,19 +9,19 @@ namespace Lab_2
 {
     internal class Connection
     {
-        public Connection(Size otv, Size val) 
+        public Connection(Size otv, Size val) // Объявление в конструкторе перменных
         {
             _shaft = val;
             _hole = otv;
         }
-        private Size? _shaft = null;
+        private Size? _shaft = null; // Объявление новых перменных
         private Size? _hole = null;
         private string type = "default";
         private double? smax = null;
         private double? smin = null;
         private double? nmax = null;
         private double? nmin = null;
-        public string GetInfo()
+        public string GetInfo() // Метод для вывода информации о виде посадки 
         {
             switch (type)
             {
@@ -40,7 +40,7 @@ namespace Lab_2
                 default: { return "0"; }
             }
         }
-        private void SetType()
+        private void SetType() // Метод для определения вида посадки и расчета зазора-натяга
         {
             if (_hole.Es - _shaft.Ei > 0 && _hole.Ei - _shaft.Ei > 0)
             {
@@ -77,7 +77,7 @@ namespace Lab_2
         {
             get { return nmin; }
         }
-        private double? Probability()
+        private double? Probability() // Метод для расчета значения интеграла Ф(z)
         {
             double? Mx = (_shaft.Es + _shaft.Ei) / 2 - (_hole.Es + _hole.Ei) / 2;
             double? Sigma = 1.0 / 6 * Math.Sqrt(Math.Pow(((double)_shaft.Es + (double)_shaft.Ei), 2) + Math.Pow(((double)_hole.Es + (double)_hole.Ei), 2));
@@ -95,11 +95,11 @@ namespace Lab_2
             double? Fz = 1.0 / Math.Sqrt((2 * 3.14)) * Fx;
             return Fz;
         }
-        public double? ProbabilitySmax() 
+        public double? ProbabilitySmax() // Метод для расчета вероятности зазора при переходной посадке
         {
             return 0.4986 + Probability();
         }
-        public double? ProbabilityNmax()
+        public double? ProbabilityNmax() // Метод для расчета вероятности натяга при переходной посадке
         {
             return 1 - ProbabilitySmax();
         }

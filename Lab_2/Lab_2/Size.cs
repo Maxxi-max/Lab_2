@@ -9,19 +9,19 @@ namespace Lab_2
 {
     internal class Size
     {
-        public Size(string type, double nominal, double es, double ei) 
+        public Size(string type, double nominal, double es, double ei) // Объявление в конструкторе переменных из ввода данных
         {
             Nominal = nominal;
             Es = es;
             Ei = ei;
             Dtype = type;
         }
-        double? _nominal = null;
+        double? _nominal = null; // Объявление новых перменных
         double? _es = null;
         double? _ei = null;
         string _type = "default";
         
-        public string? Dtype { 
+        public string? Dtype {  // Опеределение типа диаметра вал/отверстие
             get { return _type; }
             private set {
                 if (value == "вал")
@@ -30,7 +30,7 @@ namespace Lab_2
                     _type = value;
              } 
         }
-        public double? Nominal
+        public double? Nominal // Объявление и проверка всех введенных значений
         {
             private set
             {
@@ -52,17 +52,17 @@ namespace Lab_2
             private set { _ei = value; }
             get { return _ei; }
         }
-        public double? Dmax() 
+        public double? Dmax() // Метод максимального диаметра
         {
             double? Dmax = _nominal + _es;
             return Dmax;
         }
-        public double? Dmin()
+        public double? Dmin() // Метод минимального диаметра
         {
             double? Dmin = _nominal + _ei;
             return Dmin;
         }
-        public double? TD()
+        public double? TD() // Метод допуска
         {
             double? TD = _es - _ei;
             return TD;
