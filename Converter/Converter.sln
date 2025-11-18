@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Converter", "Converter\Converter.csproj", "{339CFC71-FA2D-4B46-A2A1-18B332BFB8DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsValuesLib", "Conv\PhysicsValuesLib.csproj", "{0ABC7BBA-A1D3-4D1B-B80C-8CBBADF21100}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{339CFC71-FA2D-4B46-A2A1-18B332BFB8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339CFC71-FA2D-4B46-A2A1-18B332BFB8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339CFC71-FA2D-4B46-A2A1-18B332BFB8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339CFC71-FA2D-4B46-A2A1-18B332BFB8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABC7BBA-A1D3-4D1B-B80C-8CBBADF21100}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABC7BBA-A1D3-4D1B-B80C-8CBBADF21100}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABC7BBA-A1D3-4D1B-B80C-8CBBADF21100}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABC7BBA-A1D3-4D1B-B80C-8CBBADF21100}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94F2B07F-9CAD-4CC3-91E0-6674C4F91C6E}
+	EndGlobalSection
+EndGlobal
