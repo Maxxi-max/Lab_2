@@ -84,7 +84,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(36, 70);
+            textBox1.Location = new Point(40, 85);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(70, 23);
             textBox1.TabIndex = 7;
@@ -94,7 +94,7 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(126, 12);
+            listBox1.Location = new Point(130, 27);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(52, 139);
             listBox1.TabIndex = 8;
@@ -103,14 +103,14 @@
             // 
             listBox2.FormattingEnabled = true;
             listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(184, 12);
+            listBox2.Location = new Point(188, 27);
             listBox2.Name = "listBox2";
             listBox2.Size = new Size(45, 139);
             listBox2.TabIndex = 9;
             // 
             // button2
             // 
-            button2.Location = new Point(12, 157);
+            button2.Location = new Point(16, 172);
             button2.Name = "button2";
             button2.Size = new Size(223, 40);
             button2.TabIndex = 10;
@@ -120,28 +120,28 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(267, 12);
+            textBox2.Location = new Point(271, 27);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(64, 23);
             textBox2.TabIndex = 11;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(359, 12);
+            textBox3.Location = new Point(363, 27);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(64, 23);
             textBox3.TabIndex = 12;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(359, 44);
+            textBox4.Location = new Point(363, 59);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(64, 23);
             textBox4.TabIndex = 14;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(267, 44);
+            textBox5.Location = new Point(271, 59);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(64, 23);
             textBox5.TabIndex = 13;
@@ -149,7 +149,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(242, 15);
+            label1.Location = new Point(246, 30);
             label1.Name = "label1";
             label1.Size = new Size(19, 15);
             label1.TabIndex = 15;
@@ -158,7 +158,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(337, 15);
+            label2.Location = new Point(341, 30);
             label2.Name = "label2";
             label2.Size = new Size(16, 15);
             label2.TabIndex = 16;
@@ -167,7 +167,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(243, 47);
+            label3.Location = new Point(247, 62);
             label3.Name = "label3";
             label3.Size = new Size(18, 15);
             label3.TabIndex = 17;
@@ -176,7 +176,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(337, 47);
+            label4.Location = new Point(341, 62);
             label4.Name = "label4";
             label4.Size = new Size(16, 15);
             label4.TabIndex = 18;
@@ -185,7 +185,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(601, 18);
+            label5.Location = new Point(600, 30);
             label5.Name = "label5";
             label5.Size = new Size(36, 15);
             label5.TabIndex = 22;
@@ -194,7 +194,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(477, 18);
+            label6.Location = new Point(476, 30);
             label6.Name = "label6";
             label6.Size = new Size(37, 15);
             label6.TabIndex = 21;
@@ -203,7 +203,7 @@
             // textBox6
             // 
             textBox6.Enabled = false;
-            textBox6.Location = new Point(643, 15);
+            textBox6.Location = new Point(642, 27);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(64, 23);
             textBox6.TabIndex = 20;
@@ -211,7 +211,7 @@
             // textBox7
             // 
             textBox7.Enabled = false;
-            textBox7.Location = new Point(520, 15);
+            textBox7.Location = new Point(519, 27);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(64, 23);
             textBox7.TabIndex = 19;
@@ -219,7 +219,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(602, 47);
+            label7.Location = new Point(601, 59);
             label7.Name = "label7";
             label7.Size = new Size(35, 15);
             label7.TabIndex = 26;
@@ -228,7 +228,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(478, 47);
+            label8.Location = new Point(477, 59);
             label8.Name = "label8";
             label8.Size = new Size(36, 15);
             label8.TabIndex = 25;
@@ -237,7 +237,7 @@
             // textBox8
             // 
             textBox8.Enabled = false;
-            textBox8.Location = new Point(643, 44);
+            textBox8.Location = new Point(642, 56);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(64, 23);
             textBox8.TabIndex = 24;
@@ -245,7 +245,7 @@
             // textBox9
             // 
             textBox9.Enabled = false;
-            textBox9.Location = new Point(520, 44);
+            textBox9.Location = new Point(519, 56);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(64, 23);
             textBox9.TabIndex = 23;
@@ -253,7 +253,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(619, 76);
+            label9.Location = new Point(618, 88);
             label9.Name = "label9";
             label9.Size = new Size(18, 15);
             label9.TabIndex = 30;
@@ -262,7 +262,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(491, 76);
+            label10.Location = new Point(490, 88);
             label10.Name = "label10";
             label10.Size = new Size(22, 15);
             label10.TabIndex = 29;
@@ -271,7 +271,7 @@
             // textBox10
             // 
             textBox10.Enabled = false;
-            textBox10.Location = new Point(643, 73);
+            textBox10.Location = new Point(642, 85);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(64, 23);
             textBox10.TabIndex = 28;
@@ -279,7 +279,7 @@
             // textBox11
             // 
             textBox11.Enabled = false;
-            textBox11.Location = new Point(520, 73);
+            textBox11.Location = new Point(519, 85);
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(64, 23);
             textBox11.TabIndex = 27;
@@ -287,7 +287,7 @@
             // textBox12
             // 
             textBox12.Enabled = false;
-            textBox12.Location = new Point(520, 114);
+            textBox12.Location = new Point(519, 126);
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(187, 23);
             textBox12.TabIndex = 31;
@@ -295,7 +295,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(439, 117);
+            label11.Location = new Point(438, 129);
             label11.Name = "label11";
             label11.Size = new Size(75, 15);
             label11.TabIndex = 32;
@@ -304,7 +304,7 @@
             // textBox13
             // 
             textBox13.Enabled = false;
-            textBox13.Location = new Point(520, 143);
+            textBox13.Location = new Point(519, 155);
             textBox13.Name = "textBox13";
             textBox13.Size = new Size(64, 23);
             textBox13.TabIndex = 33;
@@ -312,7 +312,7 @@
             // textBox14
             // 
             textBox14.Enabled = false;
-            textBox14.Location = new Point(643, 146);
+            textBox14.Location = new Point(642, 158);
             textBox14.Name = "textBox14";
             textBox14.Size = new Size(64, 23);
             textBox14.TabIndex = 34;
@@ -320,7 +320,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(487, 146);
+            label12.Location = new Point(486, 158);
             label12.Name = "label12";
             label12.Size = new Size(27, 15);
             label12.TabIndex = 35;
@@ -329,7 +329,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(610, 149);
+            label13.Location = new Point(609, 161);
             label13.Name = "label13";
             label13.Size = new Size(27, 15);
             label13.TabIndex = 36;
@@ -339,7 +339,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 15F);
-            label14.Location = new Point(12, 65);
+            label14.Location = new Point(16, 80);
             label14.Name = "label14";
             label14.Size = new Size(29, 28);
             label14.TabIndex = 37;
@@ -385,6 +385,7 @@
             Controls.Add(button1);
             Name = "Form1";
             Text = "Расчет допусков и посадок";
+            Load += load_con_db;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
