@@ -31,7 +31,7 @@
             button1 = new Button();
             pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
-            listBox1 = new ListBox();
+            listBoxVal = new ListBox();
             listBox2 = new ListBox();
             button2 = new Button();
             textBox2 = new TextBox();
@@ -61,16 +61,28 @@
             label12 = new Label();
             label13 = new Label();
             label14 = new Label();
+            button3 = new Button();
+            label15 = new Label();
+            button4 = new Button();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            textBox15 = new TextBox();
+            label16 = new Label();
+            textBox16 = new TextBox();
+            label17 = new Label();
+            textBox17 = new TextBox();
+            textBox18 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(685, 274);
+            button1.Location = new Point(328, 157);
             button1.Name = "button1";
-            button1.Size = new Size(103, 64);
+            button1.Size = new Size(80, 40);
             button1.TabIndex = 0;
-            button1.Text = "С зазором";
+            button1.Text = "Отобразить схему";
             button1.UseVisualStyleBackColor = true;
             button1.Click += btn_type_click;
             // 
@@ -78,7 +90,7 @@
             // 
             pictureBox1.Location = new Point(12, 274);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(653, 311);
+            pictureBox1.Size = new Size(695, 311);
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
@@ -90,20 +102,20 @@
             textBox1.TabIndex = 7;
             textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // listBox1
+            // listBoxVal
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(126, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(52, 139);
-            listBox1.TabIndex = 8;
+            listBoxVal.FormattingEnabled = true;
+            listBoxVal.ItemHeight = 15;
+            listBoxVal.Location = new Point(163, 12);
+            listBoxVal.Name = "listBoxVal";
+            listBoxVal.Size = new Size(44, 139);
+            listBoxVal.TabIndex = 8;
             // 
             // listBox2
             // 
             listBox2.FormattingEnabled = true;
             listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(184, 12);
+            listBox2.Location = new Point(112, 12);
             listBox2.Name = "listBox2";
             listBox2.Size = new Size(45, 139);
             listBox2.TabIndex = 9;
@@ -112,7 +124,7 @@
             // 
             button2.Location = new Point(12, 157);
             button2.Name = "button2";
-            button2.Size = new Size(223, 40);
+            button2.Size = new Size(310, 40);
             button2.TabIndex = 10;
             button2.Text = "Рассчитать";
             button2.UseVisualStyleBackColor = true;
@@ -120,36 +132,40 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(267, 12);
+            textBox2.Location = new Point(252, 12);
             textBox2.Name = "textBox2";
+            textBox2.ReadOnly = true;
             textBox2.Size = new Size(64, 23);
             textBox2.TabIndex = 11;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(359, 12);
+            textBox3.Location = new Point(252, 44);
             textBox3.Name = "textBox3";
+            textBox3.ReadOnly = true;
             textBox3.Size = new Size(64, 23);
             textBox3.TabIndex = 12;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(359, 44);
+            textBox4.Location = new Point(344, 44);
             textBox4.Name = "textBox4";
+            textBox4.ReadOnly = true;
             textBox4.Size = new Size(64, 23);
             textBox4.TabIndex = 14;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(267, 44);
+            textBox5.Location = new Point(344, 12);
             textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
             textBox5.Size = new Size(64, 23);
             textBox5.TabIndex = 13;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(242, 15);
+            label1.Location = new Point(227, 15);
             label1.Name = "label1";
             label1.Size = new Size(19, 15);
             label1.TabIndex = 15;
@@ -158,7 +174,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(337, 15);
+            label2.Location = new Point(230, 47);
             label2.Name = "label2";
             label2.Size = new Size(16, 15);
             label2.TabIndex = 16;
@@ -167,7 +183,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(243, 47);
+            label3.Location = new Point(320, 15);
             label3.Name = "label3";
             label3.Size = new Size(18, 15);
             label3.TabIndex = 17;
@@ -176,7 +192,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(337, 47);
+            label4.Location = new Point(322, 47);
             label4.Name = "label4";
             label4.Size = new Size(16, 15);
             label4.TabIndex = 18;
@@ -196,7 +212,7 @@
             label6.AutoSize = true;
             label6.Location = new Point(477, 18);
             label6.Name = "label6";
-            label6.Size = new Size(37, 15);
+            label6.Size = new Size(38, 15);
             label6.TabIndex = 21;
             label6.Text = "Dmax";
             // 
@@ -230,7 +246,7 @@
             label8.AutoSize = true;
             label8.Location = new Point(478, 47);
             label8.Name = "label8";
-            label8.Size = new Size(36, 15);
+            label8.Size = new Size(37, 15);
             label8.TabIndex = 25;
             label8.Text = "dmax";
             // 
@@ -264,7 +280,7 @@
             label10.AutoSize = true;
             label10.Location = new Point(491, 76);
             label10.Name = "label10";
-            label10.Size = new Size(22, 15);
+            label10.Size = new Size(21, 15);
             label10.TabIndex = 29;
             label10.Text = "TD";
             // 
@@ -320,7 +336,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(487, 146);
+            label12.Location = new Point(477, 146);
             label12.Name = "label12";
             label12.Size = new Size(27, 15);
             label12.TabIndex = 35;
@@ -329,7 +345,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(610, 149);
+            label13.Location = new Point(601, 149);
             label13.Name = "label13";
             label13.Size = new Size(27, 15);
             label13.TabIndex = 36;
@@ -345,11 +361,132 @@
             label14.TabIndex = 37;
             label14.Text = "⌀";
             // 
+            // button3
+            // 
+            button3.Location = new Point(86, 203);
+            button3.Name = "button3";
+            button3.Size = new Size(70, 42);
+            button3.TabIndex = 38;
+            button3.Text = "С зазором";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += FilterTolerance;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(36, 217);
+            label15.Name = "label15";
+            label15.Size = new Size(48, 15);
+            label15.TabIndex = 39;
+            label15.Text = "Фильтр";
+            // 
+            // button4
+            // 
+            button4.Location = new Point(162, 203);
+            button4.Name = "button4";
+            button4.Size = new Size(70, 42);
+            button4.TabIndex = 40;
+            button4.Text = "С натягом";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += FilterTolerance;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(238, 203);
+            button5.Name = "button5";
+            button5.Size = new Size(84, 42);
+            button5.TabIndex = 41;
+            button5.Text = "Переходные";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += FilterTolerance;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(328, 203);
+            button6.Name = "button6";
+            button6.Size = new Size(80, 42);
+            button6.TabIndex = 42;
+            button6.Text = "Очистить фильтр";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += LoadDataInf;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(252, 102);
+            button7.Name = "button7";
+            button7.Size = new Size(156, 35);
+            button7.TabIndex = 43;
+            button7.Text = "Задать";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += LoadDataNumb;
+            // 
+            // textBox15
+            // 
+            textBox15.Enabled = false;
+            textBox15.Location = new Point(520, 187);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(187, 23);
+            textBox15.TabIndex = 44;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(520, 172);
+            label16.Name = "label16";
+            label16.Size = new Size(114, 15);
+            label16.TabIndex = 45;
+            label16.Text = "Вероятность натяга";
+            // 
+            // textBox16
+            // 
+            textBox16.Enabled = false;
+            textBox16.Location = new Point(520, 231);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(187, 23);
+            textBox16.TabIndex = 46;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(520, 213);
+            label17.Name = "label17";
+            label17.Size = new Size(115, 15);
+            label17.TabIndex = 47;
+            label17.Text = "Вероятность зазора";
+            // 
+            // textBox17
+            // 
+            textBox17.Location = new Point(344, 73);
+            textBox17.Name = "textBox17";
+            textBox17.ReadOnly = true;
+            textBox17.Size = new Size(64, 23);
+            textBox17.TabIndex = 49;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(252, 73);
+            textBox18.Name = "textBox18";
+            textBox18.ReadOnly = true;
+            textBox18.Size = new Size(64, 23);
+            textBox18.TabIndex = 48;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(801, 597);
+            ClientSize = new Size(721, 597);
+            Controls.Add(textBox17);
+            Controls.Add(textBox18);
+            Controls.Add(label17);
+            Controls.Add(textBox16);
+            Controls.Add(label16);
+            Controls.Add(textBox15);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(label15);
+            Controls.Add(button3);
             Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
@@ -379,12 +516,13 @@
             Controls.Add(textBox2);
             Controls.Add(button2);
             Controls.Add(listBox2);
-            Controls.Add(listBox1);
+            Controls.Add(listBoxVal);
             Controls.Add(textBox1);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Name = "Form1";
             Text = "Расчет допусков и посадок";
+            Load += LoadDataInf;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -395,7 +533,7 @@
         private Button button1;
         private PictureBox pictureBox1;
         private TextBox textBox1;
-        private ListBox listBox1;
+        private ListBox listBoxVal;
         private ListBox listBox2;
         private Button button2;
         private TextBox textBox2;
@@ -425,5 +563,17 @@
         private Label label12;
         private Label label13;
         private Label label14;
+        private Button button3;
+        private Label label15;
+        private Button button4;
+        private Button button5;
+        private Button button6;
+        private Button button7;
+        private TextBox textBox15;
+        private Label label16;
+        private TextBox textBox16;
+        private Label label17;
+        private TextBox textBox17;
+        private TextBox textBox18;
     }
 }

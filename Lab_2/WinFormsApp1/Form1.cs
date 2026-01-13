@@ -106,5 +106,6 @@ namespace WinFormsApp1
                 textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             else textBox1.Clear();
         }
+
     }
 }
